@@ -4,7 +4,7 @@ const addProgress = (data, el) => {
   const totalNum = data.length;
 
   let counter = 0;
-  for (visited of data) {
+  for (const visited of data) {
     if (visited.dateVisited) {
       counter++;
     }
@@ -33,10 +33,10 @@ const cloneTemplate = () => {
   return clone;
 };
 
-const addBallparks = () => {
+const addBallparks = (data) => {
   const ballparksListEl = document.getElementById("ballparks-list");
   // Add ballparks to the page
-  ballparks.forEach(function (ballpark) {
+  data.forEach(function (ballpark) {
     const ballparkTemplate = cloneTemplate();
     const teamName = ballpark.team
       .replaceAll(" ", "-")
@@ -61,5 +61,5 @@ const addBallparks = () => {
   });
 };
 
-addBallparks();
+addBallparks(ballparks);
 addProgress(ballparks, document.getElementById("progress"));

@@ -1,6 +1,6 @@
-# MLB Ballparks
+# Ballpark Bucketlist
 
-Documenting our attempt to visit every MLB Ballpark in the United States &amp; Canada.
+Documenting our attempt to visit every MLB Ballpark.
 
 ## Notes
 

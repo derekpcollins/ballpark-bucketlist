@@ -1,0 +1,123 @@
+:root {
+  --shadow-color: 0deg 0% 58%;
+}
+
+body {
+  background-color: #eee;
+  color: #222;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#progress {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+#ballparks-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto 48px;
+  justify-content: center;
+  padding: 0;
+}
+
+#ballparks-list li {
+  background-color: rgba(255, 255, 255, 1);
+  margin: 24px;
+  //border: 2px solid rgba(22, 22, 22, 0.4);
+  //border: 1px solid rgba(22, 22, 22, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0.2px 0.2px hsl(var(--shadow-color) / 0.36),
+    0px 0.5px 0.6px -0.8px hsl(var(--shadow-color) / 0.36),
+    -0.1px 1.3px 1.5px -1.7px hsl(var(--shadow-color) / 0.36),
+    -0.2px 3.2px 3.6px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
+#ballparks-list .visited img {
+  filter: grayscale(1);
+}
+
+#ballparks-list .visited * {
+  opacity: 0.4;
+}
+
+#ballparks-list .visited:before {
+  content: "";
+  background-color: rgba(22, 22, 22, 0.4);
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  transform: rotate(45deg);
+  height: 80px;
+  width: 80px;
+}
+
+#ballparks-list .visited::after {
+  font: var(--fa-font-solid);
+  content: "\f00c";
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+#ballparks-list li h3 {
+  font-family: "Antonio", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#ballparks-list .location {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 48px;
+    width: 85%;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #ballparks-list {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  #ballparks-list li {
+    width: 100%;
+    margin: 16px 0;
+  }
+}

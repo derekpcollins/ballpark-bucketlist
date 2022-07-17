@@ -19,9 +19,9 @@ const addProgress = (data, el) => {
     totalNumVisited +
     " of " +
     totalNum +
-    " (" +
+    "</strong> (" +
     percentVisited +
-    "%)</strong> ballparks visited.";
+    "%) ballparks visited.";
 };
 
 const cloneTemplate = () => {

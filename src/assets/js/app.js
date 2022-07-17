@@ -19,7 +19,7 @@ const addProgress = (data, el) => {
     totalNumVisited +
     " of " +
     totalNum +
-    "(" +
+    " (" +
     percentVisited +
     "%)</strong> ballparks visited.";
 };

@@ -8,6 +8,7 @@ Documenting our attempt to visit every MLB Ballpark.
 - I'm using [FontAwesome](https://fontawesome.com) for the icons.
 - Using ESModules with a good [intro here](https://kentcdodds.com/blog/super-simple-start-to-es-modules-in-the-browser).
 - Using a [`for...of` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
+- Used the [CSS Shadow Palette Generator](https://www.joshwcomeau.com/shadow-palette/) for the card shadows.
 
 ## Setup
 

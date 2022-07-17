@@ -1,13 +1,29 @@
 :root {
+  color-scheme: light dark;
   --shadow-color: 0deg 0% 58%;
+  --background-color: #eee;
+  --text-color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
 body {
-  background-color: #eee;
-  color: #222;
-  font-family: "Inter", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: -apple-system, "Inter", sans-serif;
   padding: 0;
   margin: 0;
+  user-select: none;
+  height: 100%;
 }
 
 .icon::before {

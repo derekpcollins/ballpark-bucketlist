@@ -142,6 +142,11 @@ const ballparks = [
       city: "Oakland",
       state: "CA",
     },
+    dateVisited: {
+      month: 5,
+      day: 11,
+      year: 2019,
+    },
   },
   {
     name: "Oracle Park",
@@ -149,6 +154,11 @@ const ballparks = [
     location: {
       city: "San Francisco",
       state: "CA",
+    },
+    dateVisited: {
+      month: 7,
+      day: 20,
+      year: 2019,
     },
   },
   {

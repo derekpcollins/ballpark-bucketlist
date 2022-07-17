@@ -15,12 +15,13 @@ const addProgress = (data, el) => {
 
   // Create a new element to display this data
   el.innerHTML =
+    "<strong>" +
     totalNumVisited +
-    " out of " +
+    " of " +
     totalNum +
-    " ballparks visited (" +
+    "(" +
     percentVisited +
-    "%)";
+    "%)</strong> ballparks visited.";
 };
 
 const cloneTemplate = () => {

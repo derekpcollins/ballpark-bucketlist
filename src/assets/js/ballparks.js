@@ -46,6 +46,11 @@ const ballparks = [
       city: "Detroit",
       state: "MI",
     },
+    dateVisited: {
+      month: 8,
+      day: 11,
+      year: 2022,
+    },
   },
   {
     name: "Coors Field",

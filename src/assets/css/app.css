@@ -63,6 +63,7 @@ h1 {
   margin: 24px;
   //border: 2px solid rgba(22, 22, 22, 0.4);
   //border: 1px solid rgba(22, 22, 22, 0.1);
+  min-height: 220px;
   border-radius: 8px;
   text-align: center;
   width: 300px;

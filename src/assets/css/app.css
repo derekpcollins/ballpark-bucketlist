@@ -76,6 +76,10 @@ h1 {
     -0.2px 3.2px 3.6px -2.5px hsl(var(--shadow-color) / 0.36);
 }
 
+#ballparks-list .visited {
+  border: 4px solid gold;
+}
+
 #ballparks-list .visited img {
   filter: grayscale(1);
 }
@@ -86,7 +90,8 @@ h1 {
 
 #ballparks-list .visited:before {
   content: "";
-  background-color: rgba(22, 22, 22, 0.4);
+  //background-color: rgba(22, 22, 22, 0.4);
+  background-color: gold;
   position: absolute;
   bottom: -40px;
   right: -40px;

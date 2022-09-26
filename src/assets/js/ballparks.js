@@ -258,6 +258,11 @@ const ballparks = [
       city: "The Bronx",
       state: "NY",
     },
+    dateVisited: {
+      month: 9,
+      day: 25,
+      year: 2022,
+    },
   },
 ];
 

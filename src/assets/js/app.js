@@ -48,6 +48,11 @@ const addBallparks = (data) => {
     ballparkTemplate.querySelector("h3").innerText = ballpark.name;
     ballparkTemplate.querySelector(".location").innerText =
       ballpark.location.city + ", " + ballpark.location.state;
+    if (ballpark.note) {
+      const noteEl = ballparkTemplate.querySelector(".note");
+      noteEl.innerText = ballpark.note;
+      noteEl.hidden = false;
+    }
     ballparkTemplate.querySelector(".team-logo").src =
       "../assets/img/mlb-team-logos/" + teamName + ".png";
     ballparkTemplate.querySelector(".team-logo").alt = ballpark.team + " logo";
@@ -61,6 +66,11 @@ const addBallparks = (data) => {
     ballparksListEl.appendChild(ballparksListItem);
   });
 };
+
+// Sort by ballpark name so renamed parks land in the right place
+ballparks.sort((a, b) =>
+  a.name.localeCompare(b.name, "en", { sensitivity: "base" })
+);
 
 addBallparks(ballparks);
 addProgress(ballparks, document.getElementById("progress"));

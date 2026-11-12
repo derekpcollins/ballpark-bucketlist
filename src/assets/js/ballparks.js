@@ -19,7 +19,7 @@ const ballparks = [
     name: "Chase Field",
     team: "Arizona Diamondbacks",
     location: {
-      city: "Pheonix",
+      city: "Phoenix",
       state: "AZ",
     },
   },
@@ -93,7 +93,7 @@ const ballparks = [
     },
   },
   {
-    name: "Guaranteed Rate Field",
+    name: "Rate Field",
     team: "Chicago White Sox",
     location: {
       city: "Chicago",
@@ -109,7 +109,7 @@ const ballparks = [
     },
   },
   {
-    name: "Marlins Park",
+    name: "loanDepot park",
     team: "Miami Marlins",
     location: {
       city: "Miami",
@@ -117,7 +117,7 @@ const ballparks = [
     },
   },
   {
-    name: "Miller Park",
+    name: "American Family Field",
     team: "Milwaukee Brewers",
     location: {
       city: "Milwaukee",
@@ -125,7 +125,7 @@ const ballparks = [
     },
   },
   {
-    name: "Minute Maid Park",
+    name: "Daikin Park",
     team: "Houston Astros",
     location: {
       city: "Houston",
@@ -147,6 +147,7 @@ const ballparks = [
       city: "Oakland",
       state: "CA",
     },
+    note: "Former home of the A's",
     dateVisited: {
       month: 5,
       day: 11,
@@ -204,7 +205,7 @@ const ballparks = [
     },
   },
   {
-    name: "Rogers Center",
+    name: "Rogers Centre",
     team: "Toronto Blue Jays",
     location: {
       city: "Toronto",
@@ -231,7 +232,7 @@ const ballparks = [
     name: "Tropicana Field",
     team: "Tampa Bay Rays",
     location: {
-      city: "Tampa Bay",
+      city: "St. Petersburg",
       state: "FL",
     },
   },

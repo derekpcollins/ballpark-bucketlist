@@ -129,6 +129,13 @@ h1 {
   color: #555;
 }
 
+#ballparks-list .note {
+  margin: 2px 0 0;
+  font-size: 13px;
+  font-style: italic;
+  color: #777;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   h1 {
     font-size: 44px;
